@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Dayrom';
+  src: url('fonts/dayrom.eot');
+  src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+        url('fonts/dayrom.woff') format('woff'),
+        url('fonts/dayrom.ttf') format('truetype'),
+        url('fonts/dayrom.svg#Dayrom') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GENERAL */
+/* ------------------------------ */
+* {
+  font-family: 'dayrom', Arial, serif;
+  color: #d8cdc3;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  display: flex;
+  background: #302f2e;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* LEFT IMG */
+/* ------------------------------ */
+.vert-banner {
+  width: 14%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.vert-banner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* MAIN */
+/* ------------------------------ */
+main {
+  width: 86%;
+  height: 100%;  
+}
+
+/* HEADER */
+/* ------------------------------ */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* TITLE */
+/* ------------------------------ */
+.presentation {
+  width: 80%;
+  text-align: center;
+}
+
+/* AVATAR */
+/* ------------------------------ */
+.avatar {
+  width: 20%;
+  text-align: right;
+  margin: 10px;  
+}
+
+/* CONTENT */
+/* ------------------------------ */
+section {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 10px 0 10px;  
+}
+
+.xp,
+.skill,
+.educ,
+.project {
+  border: 1px #807e7c solid;
+  background: #494846;
+  width: 22%;
+  min-width: 170px;
+  margin: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+
+
+/* MEDIA QUERY */
+/* ------------------------------ */
+@media all and (max-width: 1024px) {
+  body,
+  main {
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+  .vert-banner {
+    display: none;
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+  .presentation {
+    width: 100%;
+    text-align: center;
+  }
+  .avatar {
+    width: 100%;
+    text-align: center;
+  }
+  section {
+    width: 100%;
+    flex-direction: column;    
+  }
+  .xp,
+  .skill,
+  .educ,
+  .project {
+    border: 1px #807e7c solid;
+    width: 30%;
+    min-width: 200px;
+    margin: 10px auto 0 auto;
+    padding: 7px;
+    border-radius: 10px;
+  }
+}
